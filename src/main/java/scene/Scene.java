@@ -1,3 +1,9 @@
+package scene;
+
+import geometry.HitInfo;
+import geometry.Shape;
+import math.Ray;
+
 import java.util.List;
 import java.util.ArrayList;
 
