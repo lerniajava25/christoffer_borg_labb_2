@@ -2,14 +2,17 @@ package geometry;
 
 import math.Ray;
 import math.Vector3;
+import rendering.Color;
 
 public class Sphere implements Shape {
     private final Vector3 center;
     private final double radius;
+    private final Color color;
 
-    public Sphere(Vector3 center, double radius) {
+    public Sphere(Vector3 center, double radius, Color color) {
         this.center = center;
         this.radius = radius;
+        this.color = color;
     }
 
     @Override
@@ -24,13 +27,13 @@ public class Sphere implements Shape {
         double t1 = (-b - Math.sqrt(discriminant)) / (2 * a);
         double t2 = (-b + Math.sqrt(discriminant)) / (2 * a);
         if (t1 > 0 && t2 > 0) {
-            return new HitInfo(Math.min(t1, t2));
+            return new HitInfo(Math.min(t1, t2), color);
         }
         if (t1 > 0) {
-            return new HitInfo(t1);
+            return new HitInfo(t1, color);
         }
         if (t2 > 0) {
-            return new HitInfo(t2);
+            return new HitInfo(t2, color);
         }
             return null;
     }
