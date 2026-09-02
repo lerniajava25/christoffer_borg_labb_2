@@ -1,3 +1,8 @@
+package geometry;
+
+import math.Ray;
+import math.Vector3;
+
 public class Sphere implements Shape {
     private final Vector3 center;
     private final double radius;
