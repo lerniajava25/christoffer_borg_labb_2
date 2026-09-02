@@ -6,6 +6,13 @@ public class Ray {
       this.origin = origin;
       this.direction = direction;
    }
+   public Vector3 getOrigin() {
+      return origin;
+   }
+
+   public Vector3 getDirection() {
+      return direction;
+   }
 
 
 }
