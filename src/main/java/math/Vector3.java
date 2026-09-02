@@ -1,3 +1,5 @@
+package math;
+
 public class Vector3 {
     private final double x;
     private final double y;
