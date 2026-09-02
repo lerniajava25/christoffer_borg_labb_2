@@ -1,5 +1,7 @@
 package geometry;
 
-public record HitInfo(double t) {
+import rendering.Color;
+
+public record HitInfo(double t, Color color) {
 
 }
