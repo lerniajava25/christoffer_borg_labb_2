@@ -18,4 +18,8 @@ public class Vector3 {
     public double dot(Vector3 other) {
         return this.x * other.x + this.y * other.y + this.z * other.z;
     }
+
+    public Vector3 cross(Vector3 other) {
+        return new Vector3(this.y * other.z - this.z * other.y, this.z * other.x - this.x * other.z, this.x * other.y - this.y * other.x);
+    }
 }
