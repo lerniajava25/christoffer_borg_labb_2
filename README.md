@@ -1,4 +1,4 @@
-### Christoffers primitiva Ray Tracer
+## Christoffers primitiva Ray Tracer
 
 En enkel Ray Tracer som skickar ut strålar från en fast kamera och räknar ut om strålarna träffar olika Shapes i scenen. Resultatet renderas sedan till en PNG-bild.
 
